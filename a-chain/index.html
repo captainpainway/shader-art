@@ -8,7 +8,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: false">
         <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 3 6" orbit-controls="autoRotate: true; target: #target; enableDamping: true; dampingFactor: 0.125; rotateSpeed:0.15; minDistance:3; maxDistance:100;" mouse-cursor=""></a-entity>
         <a-entity id="target">
             <a-torus position="-0.5 0 0" rotation="0 0 90" arc="180" material="shader: my-custom; color: #ffff00"></a-torus>
