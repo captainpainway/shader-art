@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A-Frame WebGL Test</title>
+    <script src="aframe-v0.8.2.min.js"></script>
+    <script src="aframe-orbit-controls-component.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 3 6" orbit-controls="autoRotate: true; target: #target; enableDamping: true; dampingFactor: 0.125; rotateSpeed:0.15; minDistance:3; maxDistance:100;" mouse-cursor=""></a-entity>
+        <a-entity id="target">
+            <a-torus position="-0.5 0 0" rotation="0 0 90" arc="180" material="shader: my-custom; color: #ffff00"></a-torus>
+            <a-torus position="0.5 0 0" rotation="0 0 -90" arc="180" material="shader: my-custom; color: #ffff00"></a-torus>
+            <a-cylinder position="0 1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ffff00"></a-cylinder>
+            <a-cylinder position="0 -1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ffff00"></a-cylinder>
+        </a-entity>
+        <a-entity>
+            <a-torus position="-2.5 0 0" rotation="90 0 90" arc="180" material="shader: my-custom; color: #ff0099"></a-torus>
+            <a-torus position="-1.5 0 0" rotation="90 0 -90" arc="180" material="shader: my-custom; color: #ff0099"></a-torus>
+            <a-cylinder position="-2 0 -1" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ff0099"></a-cylinder>
+            <a-cylinder position="-2 0 1" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ff0099"></a-cylinder>
+        </a-entity>
+        <a-entity>
+            <a-torus position="1.5 0 0" rotation="90 0 90" arc="180" material="shader: my-custom; color: #0099ff"></a-torus>
+            <a-torus position="2.5 0 0" rotation="90 0 -90" arc="180" material="shader: my-custom; color: #0099ff"></a-torus>
+            <a-cylinder position="2 0 -1" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #0099ff"></a-cylinder>
+            <a-cylinder position="2 0 1" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #0099ff"></a-cylinder>
+        </a-entity>
+        <a-entity position="4 0 0">
+            <a-torus position="-0.5 0 0" rotation="0 0 90" arc="180" material="shader: my-custom; color: #ff9900"></a-torus>
+            <a-torus position="0.5 0 0" rotation="0 0 -90" arc="180" material="shader: my-custom; color: #ff9900"></a-torus>
+            <a-cylinder position="0 1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ff9900"></a-cylinder>
+            <a-cylinder position="0 -1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #ff9900"></a-cylinder>
+        </a-entity>
+        <a-entity position="-4 0 0">
+            <a-torus position="-0.5 0 0" rotation="0 0 90" arc="180" material="shader: my-custom; color: #00ff99"></a-torus>
+            <a-torus position="0.5 0 0" rotation="0 0 -90" arc="180" material="shader: my-custom; color: #00ff99"></a-torus>
+            <a-cylinder position="0 1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #00ff99"></a-cylinder>
+            <a-cylinder position="0 -1 0" rotation="0 0 90" radius="0.4" material="shader: my-custom; color: #00ff99"></a-cylinder>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
