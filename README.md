@@ -1,5 +1,5 @@
 # Shader Art
-* 7/27/18 - [Very Basic]{https://captainpainway.github.io/shader-art/very-basic): Basic half-screen linear gradients.
+* 7/27/18 - [Very Basic](https://captainpainway.github.io/shader-art/very-basic): Basic half-screen linear gradients.
 * 7/24/18 - [Just A Cube](https://captainpainway.github.io/shader-art/just-a-cube): Just a cube.
 * 7/22/18 - [Julia Fractal](https://captainpainway.github.io/shader-art/juliafractal): A time-based Julia fractal based off the Mandelbrot fractal.
 * 7/21/18 - [Mandelbrot](https://captainpainway.github.io/shader-art/mandelbrot): A simple Mandelbrot fractal.
