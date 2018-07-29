@@ -10,10 +10,7 @@ const float MIN_DISTANCE = 0.0;
 const float MAX_DISTANCE = 100.0;
 const float EPSILON = 0.0001;
 
-float sphere(vec3 p) {
-    return length(p) - 1.0;
-}
-
+// Distance functions from http://iquilezles.org/www/articles/distfunctions/distfunctions.htm
 float tor(vec3 p, vec2 t) {
     vec2 q = vec2(length(p.xz) - t.x, p.y);
     return length(q) - t.y;
@@ -26,6 +23,7 @@ vec3 twist(vec3 p) {
     return vec3(m * p.xz, p.y);
 }
 
+// Rotation matrix function from http://www.neilmendoza.com/glsl-rotation-about-an-arbitrary-axis/
 mat4 rotationMatrix(vec3 axis, float angle) {
     vec3 a = normalize(axis);
     float s = sin(angle) * -1.0;
@@ -51,6 +49,7 @@ float scene(vec3 p) {
     return tor(r, vec2(0.6, 0.3));
 }
 
+// Raymarching and phong lighting equations from https://www.shadertoy.com/view/lt33z7
 float raymarch(vec3 eye, vec3 direction, float start, float end) {
     float depth = start;
     for (int i = 0; i < MAX_MARCHING_STEPS; i++) {
