@@ -1,4 +1,5 @@
 # Shader Art
+* 7/30/18 - [Bumpy Sphere](https://captainpainway.github.io/shader-art/bumpy-sphere): Ray marching. Time-based displacement and rotation with phong shading.
 * 7/29/18 - [Spinning Color Wheel](https://captainpainway.github.io/shader-art/spinning-color-wheel): HSB color wheel, masked into a 2D donut, with time-based rotation.
 * 7/27/18 - [Very Basic](https://captainpainway.github.io/shader-art/very-basic): Basic half-screen linear gradients.
 * 7/24/18 - [Just A Cube](https://captainpainway.github.io/shader-art/just-a-cube): Just a cube.
