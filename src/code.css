@@ -1,0 +1,14 @@
+.code {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 500px;
+    height: 100%;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.code.closed {
+    transform: translateX(-505px);
+}

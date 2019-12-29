@@ -1,0 +1,35 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 300px;
+    height: 100%;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.menu.closed {
+    transform: translateX(-305px);
+}
+
+h1 {
+    padding-left: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 10px 20px 10px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+li:hover {
+    background-color: #1f3c52;
+}

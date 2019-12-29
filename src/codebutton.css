@@ -1,0 +1,40 @@
+.code1, .code2, .code3 {
+    position: absolute;
+    left: 10px;
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 600ms;
+}
+
+.code1.closed {
+    top: 5px;
+    transform: rotateZ(0deg);
+}
+
+.code2.closed {
+    opacity: 100;
+}
+
+.code3.closed {
+    top: 25px;
+    transform: rotateZ(0deg);
+}
+
+.code1 {
+    top: 15px;
+    transform: rotateZ(45deg);
+}
+
+.code2 {
+    top: 15px;
+    opacity: 0;
+}
+
+.code3 {
+    top: 15px;
+    transform: rotateZ(-45deg);
+}

@@ -1,0 +1,40 @@
+.ham1, .ham2, .ham3 {
+    position: absolute;
+    left: 10px;
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 600ms;
+}
+
+.ham1.closed {
+    top: 5px;
+    transform: rotateZ(0deg);
+}
+
+.ham2.closed {
+    opacity: 100;
+}
+
+.ham3.closed {
+    top: 25px;
+    transform: rotateZ(0deg);
+}
+
+.ham1 {
+    top: 15px;
+    transform: rotateZ(45deg);
+}
+
+.ham2 {
+    top: 15px;
+    opacity: 0;
+}
+
+.ham3 {
+    top: 15px;
+    transform: rotateZ(-45deg);
+}
